@@ -20,7 +20,7 @@
 
 ## Required Account Keys
 - CTR_Credentials (default)
-- MISP API Keys
+- [MISP API Keys](https://www.circl.lu/doc/misp/automation/)
 - Webex Teams Token (optional)
 
 ## Required Atomic Workflows
