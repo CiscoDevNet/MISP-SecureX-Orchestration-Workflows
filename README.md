@@ -13,7 +13,7 @@
 > **Note:** Please test this properly before implementing in a production environment. This is a sample workflow!
 
 ## Required Targets
-- MISP API ([SecureX Orchestration Remote Connector](https://ciscosecurity.github.io/sxo-05-security-workflows/remote/) may be needed)
+- MISP API ([Automation Remote Connector](https://docs.securex.security.cisco.com/Orchestration-Help/Content/remote.html) may be needed)
 
 ## Required Account Keys
 - [MISP API Keys](https://www.circl.lu/doc/misp/automation/)
@@ -30,15 +30,14 @@
 
 2. Click on **IMPORT** to import the workflow:
 
-![](screenshots/import-workflow.png)
-
 3. Click on **Browse** and copy paste the content of the [misp-event-to-incident-workflow.json](https://raw.githubusercontent.com/CiscoDevNet/MISP-SecureX-Orchestration-Workflows/main/misp-event-to-incident-workflow.json) file inside of the text window. Select **IMPORT AS A NEW WORKFLOW (DUPLICATE)** and click on **IMPORT**.
 
-![](screenshots/copy-paste.png)
+4. When importing the workflow, you will be prompted for missing information, click **UPDATE**, then click **CONTINUE** for the Target selection as they are prefilled.
+5. After this you will be prompted for the MISP Token, please fill in your "Automation Key" here that you have retrieved from [MISP](https://www.circl.lu/doc/misp/automation/#automation-key). This key will be stored encrypted as Secure String. After filling this in your can click **IMPORT**.
 
-4. Make sure you have filled in the MISP HTTP Target and API Credentials in the `MISP-GET-EVENTS` activity. 
+6. As final step, please click on the first block in the workflow, named **GET Events From MISP**. Make sure you have filled in the MISP HTTP Target in the Target selection. There is a pre-built Target which you can edit by clicking on the pencil icon, named "MISP HTTP Target". Again, please note that if the MISP Server is in your internal network, you will need a [Automation Remote Connector](https://docs.securex.security.cisco.com/Orchestration-Help/Content/remote.html).
 
-5. At the bottom of the Workflow you can optionally add any ticketing system or notification of choice.
+7. At the bottom of the Workflow you can optionally add any ticketing system or notification of choice.
 
 ## Notes
 
