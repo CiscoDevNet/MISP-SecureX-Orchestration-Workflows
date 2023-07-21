@@ -3,6 +3,8 @@
 
 # MISP SecureX Orchestration Workflows
 
+> **NOTE**: If you are using Cisco XDR, please use [MISP Events to Cisco XDR Incident and Ticketing System](https://github.com/CiscoDevNet/MISP-SecureX-Orchestration-Workflows).
+
 ## Features
 *	Import events from [MISP](https://www.circl.lu/doc/misp/automation/) into SecureX.
 *	Automatically enrich observables and search for potential targets with Cisco Threat Response.
